@@ -1,1 +1,36 @@
 
+
+```cs
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0a;--bg-2:#111111;--bg-3:#161616;--bg-4:#1a1a1a;--surface:rgba(255,255,255,0.04);--surface-hover:rgba(255,255,255,0.07);--border:rgba(255,255,255,0.08);--border-strong:rgba(255,255,255,0.15);--text:#f5f5f5;--text-2:#b5b5b5;--text-3:#7a7a7a;--accent:#c8a45c;--accent-2:#d4af6a;--accent-3:#e8c87a;--accent-glow:rgba(200,164,92,0.25);--whatsapp:#25d366;--whatsapp-dark:#1ebe5a;--radius:16px;--radius-sm:12px;--radius-xs:8px;--transition:0.35s cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);--max:1200px;--nav-h:72px}
+html{scroll-behavior:smooth;scroll-padding-top:var(--nav-h);-webkit-text-size-adjust:100%}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+iframe{display:block}
+h1,h2,h3{font-weight:700;line-height:1.1;letter-spacing:-0.02em}
+.section__title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.2rem,5vw,3.5rem);letter-spacing:0.02em;margin-bottom:1rem}
+.section__eyebrow{font-size:0.78rem;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem}
+.section__sub{color:var(--text-2);font-size:1.05rem;max-width:560px}
+.container{width:100%;max-width:var(--max);margin:0 auto;padding:0 24px}
+.section{padding:clamp(64px,10vw,120px) 0}
+.section__head{text-align:center;max-width:640px;margin:0 auto clamp(40px,6vw,64px)}
+.skip-link{position:absolute;top:-100px;left:16px;background:var(--accent);color:#000;padding:10px 18px;border-radius:8px;font-weight:600;z-index:9999;transition:top 0.25s}
+.skip-link:focus{top:16px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.85rem 1.8rem;font-size:0.92rem;font-weight:600;letter-spacing:0.03em;border-radius:var(--radius-sm);transition:all var(--transition);cursor:pointer;white-space:nowrap;border:1px solid transparent}
+.btn--primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#0a0a0a}
+.btn--primary:hover{box-shadow:0 8px 30px var(--accent-glow);transform:translateY(-2px)}
+.btn--whatsapp{background:var(--whatsapp);color:#0a0a0a}
+.btn--whatsapp:hover{background:var(--whatsapp-dark);transform:translateY(-2px);box-shadow:0 8px 30px rgba(37,211,102,0.3)}
+.btn--outline{background:transparent;border-color:var(--border-strong);color:var(--text)}
+.btn--outline:hover{border-color:var(--accent);color:var(--accent)}
+.btn--ghost{background:transparent;border-color:var(--border);color:var(--text)}
+.btn--ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn--large{padding:1.1rem 2.4rem;font-size:1rem}
+.btn__icon{width:18px;height:18px;flex-shrink:0}
+.nav{position:fixed;top:0;left:0;width:100%;height:var(--nav-h);z-index:1000;transition:background var(--transition),backdrop-filter var(--transition),border-color var(--transition);border-bottom:1px solid transparent}
+.nav--scrolled{background:rgba(10,10,10,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom-color:var(--border)}
+.nav__inner{max-width:var(--max);margin:;
